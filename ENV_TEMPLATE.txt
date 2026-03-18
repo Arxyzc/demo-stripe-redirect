@@ -1,0 +1,25 @@
+COPIA ESTO EN UN ARCHIVO LLAMADO .env EN LA RAIZ DEL PROYECTO
+=============================================================
+
+# Stripe API Keys
+# Obtén tus claves en: https://dashboard.stripe.com/apikeys
+STRIPE_SECRET_KEY=sk_test_tu_clave_secreta_aqui
+STRIPE_PUBLIC_KEY=pk_test_tu_clave_publicable_aqui
+
+# Frontend URL (para redireccionamientos después del pago)
+FRONTEND_URL=http://localhost:5173
+
+# Entorno (development o production)
+NODE_ENV=development
+
+# Puerto del servidor (opcional, por defecto es 3000)
+# PORT=3000
+
+
+EJEMPLO COMPLETO CON CLAVES REALES:
+===================================
+
+STRIPE_SECRET_KEY=sk_test_51234567890abcdefghijklmnopqrstuvwxyz
+STRIPE_PUBLIC_KEY=pk_test_51234567890abcdefghijklmnopqrstuvwxyz
+FRONTEND_URL=http://localhost:5173
+NODE_ENV=development
