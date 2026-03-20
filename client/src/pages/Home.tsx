@@ -18,8 +18,6 @@ export default function Home() {
     setIsLoading(true);
 
     try {
-      console.log("BACKEND_URL:", import.meta.env.VITE_BACKEND_URL);
-      
       const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/stripe/create-checkout-session`, {
         method: "POST",
         headers: {
@@ -31,8 +29,6 @@ export default function Home() {
           userId: user.id,
         }),
       });
-
-      console.log("Response status:", response.status);
 
       if (!response.ok) {
         throw new Error("Failed to create checkout session");
